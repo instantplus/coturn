@@ -39,6 +39,11 @@ docker run instantplus/coturn
   --env JSON_CONFIG="{\"config\":[\"no-auth\"]}"
 ```
 
+example:
+```sh
+docker run -dt --net host -p 3478:3478/udp -p 3478:3478/tcp -p 3479:3479/udp -p 3479:3479/tcp -p 5349:5349/udp -p 5349:5349/tcp -p 5350:5350/udp -p 5350:5350/tcp -p 49152:65535/udp -e PORT=3478 -e ALT_PORT=3479 -e TLS_PORT=5349 -e TLS_ALT_PORT=5350 -e MIN_PORT=49152 -e MAX_PORT=65535 -e JSON_CONFIG="{\"config\":[\"no-auth\"]}" instantplus/coturn
+```
+
 ### Notes
 - The startup script will auto-discover a public and private IP address, which can be environmentally overridden;
 - The startup script will also accept a JSON_CONFIG environment variable containing a JSON formatted string with a config key array of lines to add to the generated coturn configuration file;
