@@ -1,0 +1,13 @@
+sudo: required
+language: generic
+services:
+  - docker
+before_script:
+  - docker --version
+script:
+  - docker build -t instantplus/coturn:latest ./
+notifications:
+  email:
+    recipients:
+      - ivoputzer+instantplus@gmail.com
+      - crifei93@gmail.com
