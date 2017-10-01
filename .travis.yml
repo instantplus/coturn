@@ -9,5 +9,5 @@ script:
 notifications:
   email:
     recipients:
-      - ivoputzer+instantplus@gmail.com
-      - crifei93@gmail.com
+      - ivo@instant.plus
+      - christian@instant.plus
