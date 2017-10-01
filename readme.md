@@ -3,7 +3,7 @@ This is a lightweight build of [coturn](https://github.com/coturn/coturn) based 
 
 ### build the docker image
 ```sh
-docker build instantplus/coturn:latest ./
+docker build instantplus/coturn:latest .
 ```
 
 ### pull latest image from dockerhub
