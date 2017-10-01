@@ -5,7 +5,7 @@ services:
 before_script:
   - docker --version
 script:
-  - docker build -t instantplus/coturn:latest ./
+  - docker build instantplus/coturn:latest ./
 notifications:
   email:
     recipients:
