@@ -1,7 +1,6 @@
 FROM debian:jessie
 MAINTAINER Ivo von Putzer Reibegg <info@instant.plus>
 
-ENV LC_ALL en_US.UTF-8
 ENV DEBIAN_FRONTEND noninteractive
 ENV COTURN_VERSION 4.5.0.6
 
