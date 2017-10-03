@@ -22,4 +22,4 @@ EXPOSE 5349 5349/udp
 EXPOSE 5350 5350/udp
 
 VOLUME /etc/letsencrypt
-ENTRYPOINT /usr/bin/turnserver
+ENTRYPOINT ["/usr/bin/turnserver"]
