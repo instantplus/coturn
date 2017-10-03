@@ -8,7 +8,6 @@ RUN ln -s -f /bin/true /usr/bin/chfn
 RUN apt-get update
 RUN apt-get install -y curl coturn procps --no-install-recommends
 
-RUN apt-get install -y sqlite libsqlite3-dev libevent-dev coturn procps --no-install-recommends
 # RUN apt-get install -y sqlite libsqlite3-dev libevent-dev procps --no-install-recommends\
 #  && curl -o /tmp/coturn.tar.gz -sL http://turnserver.open-sys.org/downloads/v${COTURN_VERSION}/turnserver-${COTURN_VERSION}.tar.gz\
 #  && tar xvfz /tmp/coturn.tar.gz -C /tmp\
